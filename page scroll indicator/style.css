@@ -41,12 +41,13 @@ section{
   margin: 2px;
   background: rgba(220, 194, 196, 0.7);
   box-shadow: 0 0 15px rgba(107, 0, 128, 0.8);
+  
 } 
 
 .scroll-indicator {
   background-color: rgb(11, 5, 5);
   height: 6px;
-  width: calc(100% - 6em);
+  width: calc(100% - 6em); /* width:92%; */
   top: 10px;
   left: 3em;
   border-radius: 3px;

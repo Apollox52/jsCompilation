@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --primary-color:white;
+  --primary-label:black;
+  --secondary-label:white;
+  --white-ball:white;
+  --black-ball:black;
+}
+body{
+  background: var(--primary-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+/*Check box hidden*/
+#switch{
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+label{
+  display: block;
+  width: 100px;
+  height: 50px;
+  background: var(--primary-label);
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow: 0 0 15px red ;
+}
+
+label::after{
+  content: "";
+  width: 40px;
+  height: 40px;
+  background:var(--white-ball);
+  border-radius: 70px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  transition:.7s ;
+  
+}
+
+#switch:checked + label:after {
+  background-color: var(--black-ball);
+  left:56px;
+  
+}
+
+#switch:checked + label{
+  background-color: var(--secondary-label);
+  box-shadow: 0 0 15px purple ;
+}
+
+/*the sliding effect when u click on it */
+
+label:active:after{
+  width: 50px;
+
+}

@@ -1,0 +1,130 @@
+:root{
+  --modal-duration:1s;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header{
+  position: relative;
+  background-image: url('assets/47259-virtual-reality-neon-artist-artwork-digital-art-hd-scifi-cyberpunk.jpg')   ;
+  background-color: rgb(228, 65, 65);
+  height: 651px;
+  z-index: 0;
+}
+
+.content-container {
+  
+  position: absolute;
+  left: 14%;
+  top: 30%;
+  
+}
+
+.content-container h1 {
+  font-size: 7cap;
+  color: aliceblue;
+}
+.content-container p{
+  position: relative;
+  font-size: larger;
+  color: aliceblue;
+  top: 20px;
+  left: 8%;
+  width: 70%;
+  text-align: center
+  
+}
+
+.content-container .cta-btn{
+  position: relative;
+  margin-top: 4%;
+  left: 40%;
+  background-color: rgb(179, 23, 23);
+  padding: 15px;
+  font-size: larger;
+  border-radius: 3px;
+  border: none;
+  border: .3px solid;
+  border-color: rgb(1, 8, 8);
+  color: antiquewhite;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+ /*Form*/
+
+.modal-container{
+  display: none;
+  position: fixed ;
+   
+  
+  top: 50px;
+  left: 28%;
+  padding: 20px;
+  width: 45%;
+  height: 83%;
+  border-radius: 20px;
+  box-shadow: 0 0 6px ;
+  background-color: rgba(151, 74, 219, 0.101);
+  backdrop-filter: blur(10px);
+
+}
+.modal-form{
+  position: relative;
+  width: 570px;
+  padding: 0px;
+  left: 0px;
+  margin-top: 6%;
+}
+.modal-container .close-btn{
+  color: black;
+  background-color:white;
+  border: none;
+  position: relative  ;
+  left: 97%;
+  font-size: x-large;
+  
+}
+.modal-content h1{
+  font-size: 40px;
+  color: antiquewhite;
+  font-weight: 10;
+}
+.modal-form input  {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  border:  .7px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  margin-top: 8px;
+  margin-bottom: 14px;
+  font-size: 16px;
+
+}
+
+.modal-form label {
+  position: relative; 
+  font-size: larger;
+  color: antiquewhite;
+  left: 1%;
+
+}
+
+.modal-form .submit-btn{
+  background-color: rgba(140, 72, 185, 0.306);
+  width: 20%;
+  color: antiquewhite;
+  border: 2px solid;
+  box-shadow: 0 0 70px red;
+  border-radius: 3px;
+  margin-top: 25px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.modal-container.show-modal{
+  display:flex; 
+}

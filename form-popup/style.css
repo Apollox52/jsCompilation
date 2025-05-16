@@ -1,6 +1,4 @@
-:root{
-  --modal-duration:1s;
-}
+
 *{
   margin: 0;
   padding: 0;
@@ -39,27 +37,44 @@ header{
 }
 
 .content-container .cta-btn{
-  position: relative;
-  margin-top: 4%;
-  left: 40%;
-  background-color: rgb(179, 23, 23);
-  padding: 15px;
-  font-size: larger;
-  border-radius: 3px;
-  border: none;
-  border: .3px solid;
-  border-color: rgb(1, 8, 8);
-  color: antiquewhite;
-  box-shadow: 0 0 10px rgb(0, 0, 0);
+  position: absolute;
+  left: 38%;
+  top: 130%;
+  background-color: #fbeee0;
+  border: 2px solid #7401b6;
+  border-radius: 30px;
+  box-shadow: #8f01ed 4px 4px 0 0;
+  color: #4b4a9d;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
+
+
+.content-container .cta-btn:hover{
+  background-color: #fff;
+}
+
+
+.content-container .cta-btn:active {
+  box-shadow: #07b5ac 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
 
  /*Form*/
 
 .modal-container{
   display: none;
   position: fixed ;
-   
-  
   top: 50px;
   left: 28%;
   padding: 20px;
@@ -79,12 +94,14 @@ header{
   margin-top: 6%;
 }
 .modal-container .close-btn{
+
   color: black;
-  background-color:white;
+  background-color:rgba(255, 255, 255, 0.007);
   border: none;
   position: relative  ;
   left: 97%;
   font-size: x-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
 }
 .modal-content h1{
@@ -126,5 +143,6 @@ header{
 }
 
 .modal-container.show-modal{
-  display:flex; 
+  display:block; 
 }
+/* ------------------------------- */

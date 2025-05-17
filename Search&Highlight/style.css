@@ -1,0 +1,48 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section{
+  background-color: rgb(15, 15, 34);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+
+  
+}
+input-container{
+  position: absolute;
+  top: 30%;
+}
+input{
+  position: relative;
+  padding: 17px;
+  border-radius: 30px;
+  font-size: larger;
+  left: 10%;
+  width:500px;
+  height: 40px;
+}
+p{
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  width: 70%;
+  position: absolute;
+  left: 20%;
+  margin-top:5% ;
+}
+.searchbtn{
+  position: relative;
+  top: 100%;
+  right: 40%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: red;
+}
+
+mark{
+ background-color: aqua;
+}

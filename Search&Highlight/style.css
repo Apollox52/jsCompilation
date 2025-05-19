@@ -11,7 +11,6 @@ section{
   height: 100vh;
   flex-direction: column;
 
-  
 }
 input-container{
   position: absolute;
@@ -41,8 +40,15 @@ p{
   padding: 20px;
   border-radius: 20px;
   background-color: red;
+  color: beige;
+  border: 2px solid ;
 }
+
+
+
 
 mark{
  background-color: aqua;
+ border: 2px solid rgb(255, 0, 25);
+ 
 }

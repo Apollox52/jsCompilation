@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center; height: 100vh;
+  background-color: rgb(74, 21, 21);
+}
+#displayJoke{
+ background-color: rgb(255, 242, 0);
+  width: 600px;
+  padding: 20px;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  font-size: x-large;
+  font-weight: 500;
+  box-shadow: 0 0 20px rgb(255, 98, 0);
+}
+button{
+  background-color: red;
+  border-radius: 100px;
+  padding: 10px;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  color: aliceblue;
+  border: 1px solid black;
+  font-size: medium;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  position: relative;
+  left: 42%;
+  margin-top: 10%;
+}
